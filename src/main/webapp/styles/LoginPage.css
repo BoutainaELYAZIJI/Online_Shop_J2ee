@@ -1,0 +1,212 @@
+@charset "ISO-8859-1";
+body{
+
+font-family: Aral, Helvetica, sans-serif;
+background-color: #f8fafb;
+margin-top: 100px;
+margin-left:100px;
+margin-right: 100px;
+margin-bottom: 0px;
+}
+
+
+.SignIn-title{
+font-size: 30px;
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+margin: 0;
+padding: 0;
+
+}
+.SignIn-title span {
+font-weight: 700;
+font-family: 'Roboto', sans-serif;
+
+
+}
+
+.signIn{
+display: grid;
+grid-template-columns: 500px 500px;
+width: 100%;
+
+
+}
+.signIn-form{
+display:flex;
+flex-direction: column;
+margin-right: 50px;
+
+}
+
+.img-sign{
+
+    height: 400px;
+    width: 100%;
+}
+
+.SignIn-Image{
+
+    width: 600px;
+  
+}
+
+.signIn-p{
+font-size: 16px;
+
+line-height: 20px;
+margin-bottom: 20px;
+
+color: rgb(150, 150, 150);
+
+max-width: 450px;
+
+}
+
+.username , .pass{
+    height: 40px;
+    width: 100%;
+    background-color: #f8fafb;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width:1px ;
+    font-size: 20px;
+
+
+  
+}
+
+input:focus {
+	outline: none;
+  
+  
+}
+
+.username{
+    margin-bottom:10px;
+    
+    
+
+}
+.username::placeholder{
+
+font-size: 12px;
+color: rgb(179, 179, 179);
+
+
+
+}
+
+.pass::placeholder{
+    color: rgb(179, 179, 179);
+
+    font-size: 12px;
+
+ 
+    
+    
+    }
+button{
+    display: block;
+    background-color: rgb(220,38,16);
+
+    height: 50px;
+    border:0;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.checkBoxFlex{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+   margin-bottom: 15px;
+   margin-top: 15px;
+
+}
+
+.rememberMe{
+    font-size: 14px;
+    margin-right: 168px;
+    margin-left: 5px;
+    color: rgb(141, 141, 141);
+    font-weight: 500;
+}
+.forgotPass{
+    font-size: 14px;
+    text-decoration: underline;
+    color: rgb(141, 141, 141);
+    font-weight:500;
+}
+.forgotPass:hover{
+    text-decoration:none;
+    cursor: pointer;
+}
+input[type=checkbox] {
+    
+   color: white;
+    width: 30px;
+    height: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    accent-color: rgb(255, 208, 167); ;
+
+}
+@media (max-width: 1347px) {
+    .img-sign{
+       width: 500px;
+
+
+    }
+}
+@media (max-width: 1247px) {
+    .img-sign{
+   
+    width: 400px;
+
+    }
+
+  
+}
+
+
+@media (max-width: 1000px){ 
+    .img-sign{
+
+        max-width: 100%;
+    
+    }
+    .SignIn-Image{
+
+        width: 400px;
+      
+    }
+    .signIn{
+    
+        grid-template-columns: none;
+        grid-template-rows: 1fr 500px;
+     
+    }
+
+    body{
+
+        margin-left:100px;
+        margin-right: 100px;
+        margin-bottom: 0px;
+       
+    }
+
+
+}
+
+
+
+
+
+
